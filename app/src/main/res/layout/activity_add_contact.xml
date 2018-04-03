@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff99"
+    tools:context="com.ashitech.sqlitedemo.AddContact">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Your Personal Information"
+                android:textColor="#ff0000"
+                android:textStyle="bold|italic"
+                android:textSize="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Your Name"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold|italic"
+                android:textSize="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp" />
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:inputType="textPersonName"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Your Contact Number"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold|italic"
+                android:textSize="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:id="@+id/etContactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:inputType="phone"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Your Email Address"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold|italic"
+                android:textSize="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:inputType="textEmailAddress"/>
+            <Button
+                android:onClick="btnSaveData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:background="@color/colorAccent"
+                android:layout_margin="20dp"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
